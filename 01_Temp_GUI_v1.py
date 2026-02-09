@@ -42,6 +42,27 @@ class Converter():
                                         font=("Arial", 12, "bold"), width=12)
         self.to_celsius_button.grid(row=0, column=0, padx=5, pady=5)
 
+        self.to_fahrenheit_button = Button(self.button_frame,
+                                        text="To Fahrenheit",
+                                        bg="#009900",
+                                        fg="#ffffff",
+                                        font=("Arial", 12, "bold"), width=12)
+        self.to_fahrenheit_button.grid(row=0, column=1, padx=5, pady=5)
+
+        self.to_help_button = Button(self.button_frame,
+                                           text="Help / Info",
+                                           bg="#009900",
+                                           fg="#ffffff",
+                                           font=("Arial", 12, "bold"), width=12)
+        self.to_help_button.grid(row=1, column=0, padx=5, pady=5)
+
+        self.to_history = Button(self.button_frame,
+                                           text="History / Export",
+                                           bg="#009900",
+                                           fg="#ffffff",
+                                           font=("Arial", 12, "bold"), width=12)
+        self.to_history.grid(row=1, column=1, padx=5, pady=5)
+
 if __name__ == "__main__":
     root = Tk()
     root.title("Temperature Converter")
